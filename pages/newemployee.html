@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/newemployee.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+</head>
+<body>
+
+    <section class="section1">
+        <div class="logo-holder">
+            <div class="logo"><img src="img/logo.png" alt="" height="50px" width="50px" class=""></div>
+            <div class="company">Company name</div>
+        </div>
+        <div class="nav-holder">
+            <div class="nav"><a href="/">Employees</a></div>
+            <div class="nav"><a href="tasks">Tasks</a></div>
+            <div class="nav"><a href="top">Top 5!</a></div>
+        </div>
+        <div class="new-employee"><a href="/newemployee">+ New Employee</a></div>
+    </section>
+
+    <section class="section2">
+        <form action="/newemployee/add" method="post">
+            <input type="text" placeholder="Full name" class="fullname" name="fullname" >
+            <input type="email" placeholder="E - mail" class="emial" name="email" >
+            <input type="text" placeholder="Phone number" class="phone" name="phone" >
+            <input type="date" placeholder="Birthdate" class="birthdate" name="birthdate" >
+            <input type="text" placeholder="Montly salary" class="montly-salary" name="montly" >
+            <button type="submit" id="create" class="create">Create</button>
+        </form>
+    </section>
+</body>
+</html>

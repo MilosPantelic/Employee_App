@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/newtask.css">
+    <link rel="icon" type="image/x-icon" href="./../img/logo.png">
+</head>
+<body>
+
+    <section class="section1">
+        <div class="logo-holder">
+            <div class="logo"><img src="./../img/logo.png" alt="" height="50px" width="50px" class=""></div>
+            <div class="company">Company name</div>
+        </div>
+        <div class="nav-holder">
+            <div class="nav"><a href="/">Employees</a></div>
+            <div class="nav"><a href="./../tasks">Tasks</a></div>
+            <div class="nav"><a href="./../top">Top 5!</a></div>
+        </div>
+        <div class="new-task"><a href="/newtask">+ New T</a></div>
+    </section>
+
+    <section class="section2">
+        <form action="/newtask/add" method="POST">
+            <input type="text" placeholder="Title" class="titlename" name="title" >
+            <textarea class="desc" name="description" cols="30" rows="10"></textarea>
+            <input type="date" placeholder="Due-date" class="duedate" id="duedate" name="duedate" >
+            <!--<input type="text" class="status" name="status" value="Open" >-->
+            <select class="employe" name="employe" id="employe"></select>
+            <button type="submit" id="create" class="create">Create</button>
+        </form>
+    </section>
+
+    <script src="./../js/newtask.js"></script>
+</body>
+</html>
